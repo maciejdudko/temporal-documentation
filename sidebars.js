@@ -365,6 +365,7 @@ module.exports = {
               },
               items: [
                 'develop/java/integrations/spring-boot',
+                'develop/java/integrations/spring-ai',
               ],
             },
           ],
