@@ -37,7 +37,9 @@ Standalone Activity directly from your Temporal Client.
 This page covers the following:
 
 - [Get Started with Standalone Activities](#get-started)
+- [Write an Activity Function](#write-activity)
 - [Run a Worker with the Activity registered](#run-worker)
+- [Run the sample client](#run-sample)
 - [Execute a Standalone Activity with type checking](#execute-activity-type-checking)
 - [Execute a Standalone Activity without type checking](#execute-activity-no-type-checking)
 - [Start a Standalone Activity without waiting for the result](#start-activity)
@@ -318,7 +320,7 @@ You can now use the handle to wait for the result, describe, cancel, or terminat
 
 Under the hood, calling [`execute`](https://typescript.temporal.io/api/interfaces/client.TypedActivityClient#execute)
 is the same as calling [`start`](https://typescript.temporal.io/api/interfaces/client.TypedActivityClient#start)
-to durably enqueue the Standalone Activity, and then calling  `await handle.result()` to
+to durably enqueue the Standalone Activity, and then calling `await handle.result()` to
 wait for the Activity to be executed and fetch the result:
 
 ```typescript
